@@ -1,0 +1,41 @@
+;; User behaviors
+;; -----------------------------
+;; Behaviors are stored as a set of diffs that are merged together
+;; to create the final set of functionality that makes up Light Table. You can
+;; modify these diffs to either add or subtract functionality.
+;;
+;; Behaviors are added to tags, objects with those tags then automatically gain
+;; whatever logic the behavior imparts. To see a list of user-level behaviors,
+;; start typing a word related to the functionality you want in between the square
+;; brackets (e.g. "theme").
+
+[
+ ;; The app tag is kind of like global scope. You assign behaviors that affect
+ ;; all of Light Table to it.
+ [:app :lt.objs.style/set-skin "dark"]
+ [:app :lt.objs.app/run-on-init (:window.fullscreen)]
+ [:app :lt.objs.app/run-on-init :workspace.show]
+ [:app :lt.objs.plugins/load-js "user_compiled.js"]
+ [:app :lt.plugins.gitlight/config {:git-binary "c:\\Program Files (x86)\\Git\\bin\\git.exe", :max-history 20}]
+ ;;[:app :lt.plugins.gitstatusbar/config :git-binary "c:\\Program Files (x86)\\Git\\bin\\git.exe"]
+ [:app :lt.plugins.python/python-exe "c:\\python27\\python.exe"]
+
+ ;; The editor tag is applied to all editors
+ [:editor :lt.objs.editor/no-wrap]
+ [:editor :lt.objs.style/set-theme "default"]
+ [:editor :lt.objs.style/font-settings "" "12" ""]
+ [:editor :lt.objs.editor/line-numbers]
+ [:editor :lt.plugins.auto-complete/auto-show-on-input]
+ [:editor :lt.objs.editor/scroll-past-end]
+
+ ;; Here we can add behaviors to just css editors
+ [:editor.css :lt.objs.style/set-theme "paraiso-dark"]
+ [:editor.css :lt.plugins.lt-scrubber/activate-scrubber]
+
+ [:editor.html :lt.objs.style/set-theme "night"]
+
+ [:editor.python :lt.objs.style/set-theme "ambiance"]
+
+ ;; To subtract a behavior, prefix the name with '-' e.g.
+ ;;  [:app :-lt.objs.intro/show-intro]
+]
