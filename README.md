@@ -9,5 +9,5 @@ Copy all files to:
 * Linux `/home/"USER"/.config/LightTable/User/`
 
 ## TODO
-- [] On Windows define `git` path for plugin Git Status Bar [plugin link](https://github.com/zk/lt-gitstatusbar)
+- [ ] On Windows define `git` path for plugin Git Status Bar [plugin link](https://github.com/zk/lt-gitstatusbar)
 
