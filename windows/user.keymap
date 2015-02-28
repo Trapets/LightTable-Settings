@@ -13,7 +13,7 @@
  [:editor "alt-shift-w" :editor.watch.unwatch]
  [:editor "alt-w" :editor.watch.watch-selection]
  [:editor "alt-c" :clear-console]
- [:editor "ctrl-k" :toggle-comment-selection]
+ [:editor "ctrl-/" :toggle-comment-selection]
  [:editor "ctrl-shift-enter" :clear-inline-results]
  [:editor.keys.hinting.active "ctrl-del" :editor.delete-line]
  [:editor.keys.hinting.active "tab" :auto-complete]
