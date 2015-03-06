@@ -16,6 +16,7 @@
  [:app :lt.objs.app/run-on-init :workspace.show]
  [:app :lt.objs.plugins/load-js "user_compiled.js"]
  [:app :lt.plugins.python/python-exe "/usr/bin/python2"]
+ [:app :lt.objs.settings/pair-keymap-diffs]
 
  ;; The editor tag is applied to all editors
  [:editor :lt.objs.editor/no-wrap]
