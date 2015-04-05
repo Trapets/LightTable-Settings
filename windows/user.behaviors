@@ -19,6 +19,7 @@
  [:app :lt.plugins.gitlight/config {:git-binary "c:\\Program Files (x86)\\Git\\bin\\git.exe", :max-history 20}]
  [:app :lt.plugins.python/python-exe "c:\\python27\\python.exe"]
  [:app :lt.objs.settings/pair-keymap-diffs]
+ [:app :lt.objs.plugins/load-css "c:\Users\Trapets\AppData\Local\LightTable\User\ilus.css"]
 
  ;; The editor tag is applied to all editors
  [:editor :lt.objs.editor/no-wrap]

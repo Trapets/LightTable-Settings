@@ -17,6 +17,7 @@
  [:app :lt.objs.plugins/load-js "user_compiled.js"]
  [:app :lt.plugins.python/python-exe "/usr/bin/python2"]
  [:app :lt.objs.settings/pair-keymap-diffs]
+ [:app :lt.objs.plugins/load-css "/home/trapets/.config/LightTable/User/ilus.css"]
 
  ;; The editor tag is applied to all editors
  [:editor :lt.objs.editor/no-wrap]
@@ -27,7 +28,10 @@
  [:editor :lt.objs.editor/scroll-past-end]
 
  ;; Here we can add behaviors to just clojure editors
- [:editor.clojure :lt.plugins.clojure/print-length 1000]
+ [:editor.css :lt.objs.style/set-theme "paraiso-dark"]
+ [:editor.css :lt.plugins.lt-scrubber/activate-scrubber]
+
+ [:editor.html :lt.objs.style/set-theme "night"]
 
  [:editor.python :lt.objs.style/set-theme "ambiance"]
 
